@@ -1,0 +1,263 @@
+<html lang="pt-br">
+  
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" : initial-scale="1,maximum-scale=1,minimum-scale=1">
+  <title>Productz</title>
+  <link rel="dns-prefetch" href="https://cdn.awsli.com.br/">
+  <link rel="preconnect" href="https://cdn.awsli.com.br/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.awsli.com.br/production/static/loja/estrutura/v1/css/all.min.css?v=9a301be" type="text/css">
+  <link rel="stylesheet" href="https://cdn.awsli.com.br/production/static/loja/estrutura/v1/css/tema-escuro.min.css?v=9a301be" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Open%20Sans:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.awsli.com.br/production/static/loja/estrutura/v1/css/bootstrap-responsive.css?v=9a301be" type="text/css">
+  <link rel="stylesheet" href="https://cdn.awsli.com.br/production/static/loja/estrutura/v1/css/style-responsive.css?v=9a301be">
+  <link rel="stylesheet" href="/tema.css?v=20221219-101631">
+  <link rel="stylesheet" href="https://cdn.awsli.com.br/production/static/loja/estrutura/v1/css/imagezoom.min.css" type="text/css">
+ <link href="//cdn.awsli.com.br/temasv2/1685/__theme_custom.css?v=1644861078" rel="stylesheet" type="text/css">
+ <link rel="stylesheet" href="/avancado.css?v=20221219-101631" type="text/css">
+<link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/css.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+  
+  <div id="mensagem" class="aba">O produto foi adicionado ao carrinho.<span onclick="fecharAba()"> Fechar</span></div>
+  
+<!--navegaçao-->
+  <header class="justify-content-between">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary text-decoration-none d-flex">
+    <div class="container-fluid">
+    <a href="index.html" class="logo d-flex align-items-center text-dark text-decoration-none"><i id="" href="index.html" class="bx bxs-package fs-2"></i>ProductZ</a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <ul class="navbar-nav">
+            <li class="nav-item mr-3">
+              <a class="nav-link text-dark" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item mr-3">
+              <a class="nav-link text-dark" href="#">Sobre</a>
+            </li>
+            <li class="nav-item mr-3">
+              <a class="nav-link text-dark" href="#">Avaliações</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <div class="header-icons">
+      <span id="teste" class="contadordeitens"></span>
+      <div class="carrinhoaqui">
+
+        <button class="butaocarrinho"> <i class="bx bx-cart" id="carrinho"></i> 
+          <div class="itensnocarinho" id="itensNoCarrinho" style="display: none;">
+            <div class="carrinho-conteudo"> 
+
+              <ul id="listaItensCarrinho"></ul>
+            </div>
+            <div class="resumo-carrinho" style="display: none;">
+              <ul id="listaItensCarrinhoResumo"></ul>
+              <p class="subtotal" id="subtotal"></p>
+              </div>
+           </div>
+        </button>
+  <button class="botaorecusar" id="botaorecusar" style="display: none; ">Cancelar Compra</button>
+              <button class="botaoFinalizarCompra" id="botaoFinalizarCompra" style="display: none; ">Finalizar Compra</button>
+            </div>
+          </div>
+      </div>
+
+    
+</nav>
+  </header>
+<!--fim navegação-->
+
+<div class="conteiner-principal">
+<div id="corpo">
+  <div class="conteiner">
+  <div class="secao-principal row-fluid sem-coluna">
+<div class="span12 produto" itemscope="itemscope" itemtype="http://schema.org/Product">
+  <div class="row-fluid">
+    <div class="span7">
+        <div class="thumbs-vertical hidden-phone" style="display: none;">
+          <div class="produto-thumbs">
+            <div id="carouselImagem" class="flexslider flex-centered" style="padding-bottom: 5px;">
+
+            <div class="flex-viewport elastislide-carousel" style="overflow: hidden; position: relative; height: 0px;"><ul class="miniaturas slides" style="height: 200%; position: absolute; width: 100%; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+
+                  <li style="display: block;" class="active">
+                    <a href="javascript:;" title="" data-imagem-grande="" data-imagem-id="158871753">
+                      <span>
+                        <img loading="lazy" src="imgs/tomiePink.png">
+                      </span>
+                    </a>
+                  </li>
+              </ul>
+            </div>
+              <ul class="flex-direction-nav" style="display: none;">
+                <li class="flex-nav-prev">
+                  <div style="width: 30px; height: 30px; position: absolute; z-index: 11; bottom: 0; left: 0;"></div><a class="flex-prev flex-disabled" href="#" tabindex="-1">Previous</a>
+                </li>
+                <li class="flex-nav-next"><a class="flex-next flex-disabled" href="#" tabindex="-1">Next</a></li></ul></div>
+          </div>
+        </div>
+<div class="conteiner-imagem" style="margin-left: 0px;">
+        <img
+           class="sss" style="max-width: 400px; height: 400px;" loading="lazy" src="imgs/tomiePink.png" alt="" id="imagemProduto" itemprop="image">
+        </img>
+      </div>
+    </div>
+    <div class="span5">
+      <div class="principal"><div class="info-principal-produto">
+
+        
+<div class="breadcrumbs borda-alpha ">
+<ul>
+    <li>
+      <a href="/index.html"><i class="fa fa-folder"></i>Início</a>
+    </li>
+  <li>
+    <a href="">Roupas</a>
+  </li>
+<li>
+  <a href="">Moletom</a>
+</li>
+</ul>
+</div>
+
+<h1 class="nome-produto titulo cor-secundaria" itemprop="name">Moletom anime unisex tomie, cor rosa oversized</h1>
+          <div class="codigo-produto">
+            <span class="cor-secundaria">
+              <b>Código: </b> <span itemprop="sku">6941812758915</span>
+            </span>
+              <span class="cor-secundaria pull-right" itemprop="brand" itemscope="itemscope" itemtype="http://schema.org/Brand">
+                <b>Marca: </b>
+                <a href="" itemprop="url">Tomie</a>
+                <meta itemprop="name" content="Xiaomi">
+              </span>
+
+            <div class="hide trustvox-stars">
+              <a href="#comentarios" target="_self">
+                <div data-trustvox-product-code-js="255664900" data-trustvox-should-skip-filter="true" data-trustvox-display-rate-schema="false"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+<div class="acoes-produto disponivel SKU-6941812758915" data-produto-id="255664900" data-variacao-id="">
+<div>
+    <div class="preco-produto destaque-parcela ">
+
+<div>
+<strong class="preco-promocional cor-principal titulo" data-sell-price="1549.99">R$ 135,99</strong>
+ </div>
+</div>
+</div>
+<div class="comprar">
+            <label class="qtde-adicionar-carrinho" style="width: 481px;">
+              <span class="qtde-carrinho-title">Quantidade:</span>
+              <input type="number" min="1" max="3" value="1" class="qtde-carrinho" name="qtde-carrinho" style="height: 25px;">
+            </label>
+
+<!--Meta dados dos intens-->
+  <h3 style="display: none;" class="nomeprodutos" >Moletom</h3>
+  <p style="display: none;" class="mol">Moletom anime unisex tomie, cor rosa oversized</p>
+  <option style="display: none;" class="nomeproduto" id="nome" value="Moletom" style="display: none;" >Moletom</option>
+  <h6 style="display: none;" class="reeco" value="135.99"> R$135.99</h6> 
+  <option class="precoproduto" id="preco" value="135.99" style="display: none;">135.99</option>
+  <img style="display: none;" class="imgs" src="imgs/tomiePink.png">
+  <!---->
+  
+  
+  <button class="btn btn-primary" type="submit">Comprar</button>
+        <span class="cor-secundaria disponibilidade-produto">
+            <span class="disponibilidade disp-entrega">Disponibilidade: <b class="cor-principal">Imediata</b></span>
+              <span class="estoque estoque-qtd-3 qtd-menor-10">
+                  <b class="cor-principal">Aproveite!</b> Restam apenas <b class="qtde_estoque">3</b> unidades
+          </span>
+   </span>
+</div>
+</div>
+<div class="parcelas-produto borda-alpha padrao" data-produto-id="255664900">
+<ul class="accordion" id="formas-pagamento-lista-255664900">
+  <li class="accordion-group">
+    <div class="accordion-heading">
+
+        <span class="accordion-toggle">
+          <b class="text-parcelas pull-right cor-principal">R$ 135,99</b>
+          <img loading="lazy" src="https://cdn.awsli.com.br/production/static/img/formas-de-pagamento/pagali-pix-logo.png?v=9a301be" alt="Pix">
+        </span>
+    </div>
+  </li>
+</ul>
+</div>
+</div>
+
+      </div>
+    </div>
+  </div>
+  <div id="buy-together-position1" class="row-fluid" style="display: none;"></div>
+
+    <div class="row-fluid">
+
+    </div>
+
+  <div id="buy-together-position2" class="row-fluid" style="display: none;"></div>
+
+    <div id="constante" class="mb-3 justify-content-center align-items-center w-90 m-4 p-4 rounded-lg cursor-pointer shadow-sm bg-light" alt="...">
+        <label for="exampleFormControlInput1" class="form-labela">Usuário</label>
+        <input type="email" class="form-control" id="inputUsuario">
+        <br></br>
+        <label for="exampleFormControlTextarea1" class="form-labelc">Novo Comentário</label>
+        <textarea class="form-control" id="inputComentario" rows="3"></textarea>
+        <br></br>
+        <label for="exampleFormControlTextarea1" class="form-labell">Estrelas</label>
+        <input type="number" class="star" id="inputEstrelas" min="0" max="5" value="1">
+        <button id="btnPostar" class="btn btn-outline-danger btn-lg">Postar</button>
+    </div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="containerComentarios" class="d-flex flex-wrap justify-content-start ">
+  <div class="comentarios border border-3 rounded align-items-center">
+    <h6>Comentario</h6>
+    <p class="users">Usuário: Bowsernaro2021</p>
+    <p>Esse produto é muito bom mesmo. Recomendo Comprar <i class="bx bxs-star"></i> <i class="bx bxs-star"></i> <i class="bx bxs-star"></i> </p>
+    </div>
+</div>
+
+  <footer class="d-flex justify-content-center align-items-center flex-column" style="position: absolute; width: 100%; background-color: #f57758; padding: 2px 4px;">
+    <ul class="d-flex flex-wrap justify-content-center">
+      <li class="bx bxl-whatsapp text-white"></li>
+      <li class="bx bxs-envelope text-white"></li>
+      <li class="bx bxl-twitter text-white"></li>
+    </ul>
+    <p>&copy;2024 ProductZ, Inc</p>
+  </footer>
+
+  <!--Informações relavantes para o uso no javascript-->
+  
+  <h3 style="display: none;" class="nomeprodutos" >Moletom</h3>
+  <p style="display: none;" class="mol">Moletom anime unisex tomie, cor rosa oversized</p>
+  <option style="display: none;" class="nomeproduto" id="nome" value="Moletom" style="display: none;" >Moletom</option>
+  <h6 style="display: none;" class="reeco" value="135.99"> R$135.99</h6> 
+  <option class="precoproduto" id="preco" value="135.99" style="display: none;">135.99</option>
+  <img style="display: none;" class="imgs" src="imgs/tomiePink.png">
+  <!---->
+  <script src="script.js"></script>
+</body>
+</html>

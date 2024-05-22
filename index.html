@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" : initial-scale="1,maximum-scale=1,minimum-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="/site.webmanifest">
+  <title>Produtos</title>
+</head>
+<body>
+
+
+
+  <div id="mensagem" class="aba">O produto foi adicionado ao carrinho.<span onclick="fecharAba()"> Fechar</span></div>
+
+  <!--navegaçao-->
+    <header class="justify-content-between ">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary text-decoration-none d-flex">
+      <div class="container-fluid">
+      <a href="index.html" class="logo d-flex align-items-center text-dark text-decoration-none"><i id="" href="index.html" class="bx bxs-package fs-2"></i>ProductZ</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+          <div class="container ">
+            <ul class="navbar-nav ">
+              <li class="nav-item mr-3">
+                <a class="nav-link text-dark" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item mr-3">
+                <a class="nav-link text-dark" href="#">Sobre</a>
+              </li>
+              <li class="nav-item mr-3">
+                <a class="nav-link text-dark" href="#">Avaliações</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      <div class="header-icons">
+        <span id="teste" class="contadordeitens"></span>
+        <div class="carrinhoaqui">
+
+          <button class="butaocarrinho"> <i class="bx bx-cart" id="carrinho"></i> 
+            <div class="itensnocarinho" id="itensNoCarrinho" style="display: none;">
+              <div class="carrinho-conteudo"> 
+
+                <ul id="listaItensCarrinho"></ul>
+              </div>
+              <div class="resumo-carrinho" style="display: none;">
+                <ul id="listaItensCarrinhoResumo"></ul>
+                <p class="subtotal" id="subtotal"></p>
+                </div>
+             </div>
+          </button>
+    <button class="botaorecusar" id="botaorecusar" style="display: none; ">Cancelar Compra</button>
+                <button class="botaoFinalizarCompra" id="botaoFinalizarCompra" style="display: none; ">Finalizar Compra</button>
+              </div>
+            </div>
+        </div>
+  </nav>
+    </header>
+  <!--fim navegação-->
+
+
+  <section class="galeria">
+
+    <a class="text-decoration-none" href="produto.html"> 
+      <div class="conteiner">
+      <img class="imgs" src="imgs/tomiePink.png">
+        <h3 class="text-danger-emphasis text-decoration-none">Moletom</h3>
+        <p class="mol text-decoration-none">Moletom anime unisex tomie, cor rosa oversized</p>
+      <option class="nomeproduto" id="nome" value="Moletom" style="display: none;" >Moletom</option>
+      <h6 class="text-success" value="135.99"> R$135.99</h6> 
+      <option class="precoproduto" id="preco" value="135.99" style="display: none;">135.99</option>
+        <ul>
+          <li><i class="bx bxs-star"></i></li>
+          <li><i class="bx bxs-star"></i></li>
+          <li><i class="bx bxs-star"></i></li>
+          <li><i class="bx bxs-star"></i></li>
+          <li><i class="bx bx-star"></i></li>
+        </ul>
+    </a>
+    <p>Quantidade:</p>
+    <input type="number" class="quantidade" value="1" min="1">
+        <button id="btn">comprar</button>
+      </div>
+
+    <a class="text-decoration-none" href="produtodois.html"><div class="conteiner">
+        <img class="imgs" src="imgs/headset.png">
+        <h3 class="text-danger-emphasis ">Headset</h3>
+        <p class="mol">Headset gamer com microfone, surround sound</p>
+        <option class="nomeproduto" id="nome" value="Moletom" style="display: none;" >Headset</option>
+        <h6 class="text-success" value="135.99"> R$175.99</h6> 
+        <option class="precoproduto" id="preco" value="135.99" style="display: none;">175.99</option>
+        <ul>
+          <li><i class="bx bxs-star"></i></li>
+          <li><i class="bx bxs-star"></i></li>
+          <li><i class="bx bxs-star"></i></li>
+          <li><i class="bx bxs-star-half"></i></li>
+          <li><i class="bx bx-star"></i></li>
+        </ul>
+    </a>
+        <p>Quantidade:</p>
+        <input type="number" class="quantidade" value="1" min="1">
+        <button id="btn">Comprar</button>
+      </div>
+
+
+    <a class="text-decoration-none" href="produtotres.html"><div class="conteiner">
+          <img class="imgs" src="imgs/mouse teclado-Photoroom.png-Photoroom.png">
+          <h3 class="text-danger-emphasis">Kit gamer</h3>
+          <p class="mol">Kit mouse e teclado gamer led, rgb 8 cores, switch azul </p>
+          <option class="nomeproduto" id="nome" value="Kit gamer" style="display: none;" >Kit gamer</option>
+          <h6 class="text-success" value="257.89"> R$257.89</h6> 
+          <option class="precoproduto" id="preco" value="257.89" style="display: none;">257.89</option>
+          <ul>
+            <li><i class="bx bxs-star"></i></li>
+            <li><i class="bx bxs-star"></i></li>
+            <li><i class="bx bxs-star"></i></li>
+            <li><i class="bx bxs-star"></i></li>
+            <li><i class="bx bxs-star"></i></li>
+          </ul>
+    </a>
+          <p>Quantidade:</p>
+          <input type="number" class="quantidade" value="1" min="1">
+          <button id="btn">Comprar</button>
+        </div>    
+      </section>
+
+
+<script src="scriptinxe.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+
+</body>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+
+
+  <br></br>
+  <footer class="d-flex justify-content-center align-items-center flex-column" style="position: absolute; width: 100%; background-color: #f57758; padding: 2px 4px;">
+    <ul class="d-flex flex-wrap justify-content-center">
+      <li class="bx bxl-whatsapp text-white"></li>
+      <li class="bx bxs-envelope text-white"></li>
+      <li class="bx bxl-twitter text-white"></li>
+    </ul>
+    <p>&copy;2024 ProductZ, Inc</p>
+  </footer>
+</html>
